@@ -1,0 +1,150 @@
+html {
+  background-color: rgb(204, 228, 169);
+}
+
+.navbar {
+  background-color: rgb(41, 39, 39);
+}
+
+.home-button {
+  margin-left: 20px !important;
+}
+
+.nav-color {
+  color: rgb(194, 229, 140) !important;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.entry-title {
+  font-size: 45px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(194, 229, 140);
+  color: rgb(41, 39, 39);
+  width: 330px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 10px 5px gray;
+}
+
+.front-square {
+  margin: 50px 80px;
+  background-color: rgb(194, 229, 140);
+  color: rgb(41, 39, 39);
+}
+
+body {
+  background-color: rgb(194, 229, 140);
+}
+
+.panel-heading {
+  background-color: rgb(41, 39, 39) !important;
+  border-radius: 0px;
+}
+
+.panel-title {
+  color: grey;
+  font-weight: bold;
+  font-size: 25px;
+  height: 0px;
+  width: 70%;
+  display: inline-block;
+}
+
+.date-text {
+  color: grey;
+  font-size: 17px;
+  height: 0px;
+  width: 29%;
+  display: inline-block;
+}
+
+.panel-body {
+  background-color: rgb(194, 229, 140);
+  border-style: solid;
+  border-color: rgb(41, 39, 39);
+  font-size: 20px;
+}
+
+.login-container {
+  margin: 20px;
+  border-style: solid;
+  border-color: rgb(41, 39, 39);
+}
+
+.sign-up-title {
+  color: rgb(194, 229, 140);
+  font-weight: bold;
+  margin-bottom: 5px;
+  height: 0;
+  position: relative;
+  bottom: 20px;
+}
+
+.label {
+  color: black;
+  font-size: 20px;
+}
+
+.input-group {
+  margin: 5px auto;
+  width: 97%;
+}
+
+#Button {
+  border-radius: 5px;
+  background-color: gray;
+  padding: 0;
+  border: none;
+  color: lightgray;
+}
+
+#a-login {
+  margin-left: 14px;
+}
+
+#login-fail {
+  color: red;
+}
+.dashboard-title {
+  color: white;
+  font-weight: bold;
+  font-size: 10px;
+  height: 0px;
+  width: 60%;
+  display: inline-block;
+  text-align: left;
+}
+
+.dashboard-date {
+  color: white;
+  font-size: 10px;
+  height: 0px;
+  width: 20%;
+  display: inline-block;
+}
+
+.dashboard-but {
+  height: 20px;
+}
+
+.dashboard-create {
+  position: absolute;
+  bottom: 30px;
+  left: 48%;
+}
+
+.blog-input {
+  height: 100px;
+}
+
+.body-text {
+  margin: 5px;
+  word-wrap: break-word;
+}
+
+.form-input {
+  width: 97%;
+}
