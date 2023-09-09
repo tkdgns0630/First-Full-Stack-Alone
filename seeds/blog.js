@@ -2,6 +2,7 @@ const { Blog } = require("../models");
 
 const blogData = [
   {
+    title: "cat",
     body: "dog",
     user_id: 1,
   },

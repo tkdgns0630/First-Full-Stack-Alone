@@ -11,13 +11,16 @@ Blog.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    title: {
+      type: DataTypes.STRING,
+    },
     body: {
       type: DataTypes.STRING,
     },
     user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: user,
+        model: "user",
         key: "id",
       },
     },
@@ -27,7 +30,7 @@ Blog.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "comment",
+    modelName: "blog",
   }
 );
 
