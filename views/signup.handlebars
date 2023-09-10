@@ -1,29 +1,35 @@
-<div class="login-container">
-  <div class="panel-heading">
-    <h3 class="sign-up-title">Sign Up</h3>
-  </div>
-  <label class="label"> &nbsp Username</label>
+<form>
+  <div class="login-container">
+    <div class="panel-heading">
+      <h3 class="sign-up-title">Sign Up</h3>
+    </div>
+    <label class="label"> &nbsp Username</label>
 
-  <div class="input-group">
-    <input
-      type="text"
-      class="form-control"
-      placeholder="Username"
-      aria-describedby="basic-addon2"
-    />
-  </div>
+    <div class="input-group">
+      <input
+        id="name-signup"
+        type="text"
+        class="form-control"
+        placeholder="Username"
+        aria-describedby="basic-addon2"
+      />
+    </div>
 
-  <label class="label"> &nbsp Password</label>
-  <div class="input-group">
-    <input
-      type="text"
-      class="form-control"
-      aria-label="Amount (to the nearest dollar)"
-    />
-  </div>
+    <label class="label"> &nbsp Password</label>
+    <div class="input-group">
+      <input
+        id="password-signup"
+        type="text"
+        class="form-control"
+        aria-label="Amount (to the nearest dollar)"
+      />
+    </div>
 
-  <button id="Button" class="input-group">Sign Up!</button>
-  <br />
-  <br />
-  <p id="login-fail">&nbsp&nbsp&nbsp&nbsp&nbspdog</p>
-</div>
+    <button id="Button" class="input-group signup-button">Sign Up!</button>
+    <br />
+    <br />
+    <p id="sign-up-fail"></p>
+  </div>
+</form>
+
+<script src="../../js/signup.js"></script>

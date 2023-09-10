@@ -17,6 +17,10 @@ Blog.init(
     body: {
       type: DataTypes.STRING,
     },
+    date: {
+      type: DataTypes.DATEONLY,
+      defaultValue: DataTypes.NOW,
+    },
     user_id: {
       type: DataTypes.INTEGER,
       references: {

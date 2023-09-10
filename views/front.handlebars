@@ -1,18 +1,20 @@
 {{#if blogs}}
 
-  {{#each blogs}}
-    <div class="front-square">
-      <div class="panel panel-default">
-        <div class="panel-heading">
-          <h3 class="panel-title">Panel title</h3>
-          <h4 class="date-text">Date</h4>
-        </div>
-        <div class="panel-body">
-          <p class="body-text">Panel
-          </p>
+  {{#each blogs as |blog|}}
+    <a href="/api/comment/{{blog.id}}">
+      <div class="front-square">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">{{blog.title}}</h3>
+            <h4 class="date-text">{{blog.date}}</h4>
+          </div>
+          <div class="panel-body">
+            <p class="body-text">{{blog.body}}
+            </p>
+          </div>
         </div>
       </div>
-    </div>
+    </a>
   {{/each}}
 
 {{/if}}

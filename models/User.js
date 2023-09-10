@@ -19,16 +19,9 @@ User.init(
     name: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        isAlphanumeric: true,
-      },
-    },
-    email: {
-      type: DataTypes.STRING,
-      allowNull: false,
       unique: true,
       validate: {
-        isEmail: true,
+        isAlphanumeric: true,
       },
     },
     password: {

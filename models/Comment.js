@@ -11,6 +11,10 @@ Comment.init(
       primaryKey: true,
       autoIncrement: true,
     },
+    date: {
+      type: DataTypes.DATE,
+      defaultValue: DataTypes.NOW,
+    },
     blog_id: {
       type: DataTypes.INTEGER,
       allowNull: true,

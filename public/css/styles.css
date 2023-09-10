@@ -49,15 +49,16 @@ body {
   font-weight: bold;
   font-size: 25px;
   height: 0px;
-  width: 70%;
+  width: 77%;
   display: inline-block;
+  margin-left: 20px;
 }
 
 .date-text {
   color: grey;
   font-size: 17px;
   height: 0px;
-  width: 29%;
+  width: 18%;
   display: inline-block;
 }
 
@@ -105,7 +106,7 @@ body {
   margin-left: 14px;
 }
 
-#login-fail {
+#login-fail #sign-up-fail {
   color: red;
 }
 .dashboard-title {

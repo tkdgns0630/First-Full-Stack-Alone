@@ -1,3 +1,4 @@
+<form>
 <div class="login-container">
   <div class="panel-heading">
     <h3 class="sign-up-title">Login</h3>
@@ -6,6 +7,7 @@
 
   <div class="input-group">
     <input
+    id="login-name"
       type="text"
       class="form-control"
       placeholder="Username"
@@ -16,16 +18,20 @@
   <label class="label"> &nbsp Password</label>
   <div class="input-group">
     <input
+    id ="login-password"
       type="text"
       class="form-control"
       aria-label="Amount (to the nearest dollar)"
     />
   </div>
 
-  <button id="Button" class="input-group">Login</button>
+  <button id="Button" class="input-group login-button">Login</button>
 
-  <a id="a-login" href="#">Sign-up instead</a>
+  <a id="a-login" href="/api/user/login">Sign-up instead</a>
   <br />
   <br />
-  <p id="login-fail">&nbsp&nbsp&nbsp&nbsp&nbspdog</p>
+  <p id="login-fail"></p>
 </div>
+</form>
+
+<script src ="../js/login.js" >

@@ -1,15 +1,31 @@
 <div class="front-square">
   <div class="panel panel-default">
     <div class="panel-heading">
-      <h3 class="panel-title">Panel title</h3>
-      <h4 class="date-text">Date</h4>
+      <h3 class="panel-title">{{blog.title}}</h3>
+      <h4 class="date-text">{{blog.date}}</h4>
     </div>
     <div class="panel-body">
-      <p class="body-text">
+      <p class="body-text">{{blog.body}}
       </p>
     </div>
   </div>
 </div>
+
+
+{{#each blog.comments}}
+<div class="front-square">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">{{id}}</h3>
+    </div>
+    <div class="panel-body">
+      <p> &nbsp Comment : {{body}} </p>
+    </div>
+  </div>
+</div>
+{{/each}}
+
+
 
 <div class="front-square">
   <div class="panel panel-default">
