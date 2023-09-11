@@ -23,5 +23,20 @@ const create = async () => {
   }
 };
 
+// delete blog
+const delUserBlog = async () => {
+  const blogId = document.querySelector("#blog-id").value;
+
+  const response = await fetch(`/api/dashboard/${blogId}`, {
+    method: "DELETE",
+  });
+
+  if (response.ok) {
+    document.location.replace("/api/dashboard");
+  } else {
+    alert("Failed to delete blog");
+  }
+};
+
 document.querySelector(".create-but").addEventListener("click", create);
-// document.querySelector('.del-but').addEventListener('click', delete);
+document.querySelector(".del-but").addEventListener("click", delUserBlog);

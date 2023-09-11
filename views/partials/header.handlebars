@@ -1,3 +1,4 @@
+{{! navbar }}
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -22,6 +23,7 @@
       <ul class="nav navbar-nav">
         <li><a class="nav-color" href="/api/dashboard">Dashboard
             <span class="sr-only">(current)</span></a></li>
+        {{! conditionally render login button }}
         {{#if logged_in}}
           <li><a id="logout" class="nav-color" href="/">Logout</a></li>
         {{else}}

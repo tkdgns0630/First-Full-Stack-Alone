@@ -28,10 +28,10 @@ app.use(session(sess));
 app.use(express.json());
 app.use(routes);
 
-app.get('*', (req, res) => {
-  res.status(404).send('page not found');
+app.get("*", (req, res) => {
+  res.status(404).send("page not found");
 });
 
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+  app.listen(PORT, () => console.log("Now listening"));
 });

@@ -2,6 +2,7 @@ const router = require("express").Router();
 const withAuth = require("../../utils/auth");
 const { User, Blog, Comment } = require("../../models");
 
+// render each blog if clicked
 router.get("/:id", withAuth, async (req, res) => {
   const blogData = await Blog.findByPk(req.params.id, {
     include: [

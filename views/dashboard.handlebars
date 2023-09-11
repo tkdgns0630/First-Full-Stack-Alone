@@ -1,3 +1,4 @@
+{{! print personal blogs to dashboard }}
 {{#each user.blogs}}
   <a href="/api/dashboard/{{id}}">
     <button id="button-blog" class="button input-group dashboard-but">
@@ -7,6 +8,7 @@
   </a>
 {{/each}}
 
+{{! add add blog button }}
 <a href="/api/dashboard/createblog">
   <button id="button-add" class="button dashboard-create">
     Create a blog
