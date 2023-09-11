@@ -1,3 +1,5 @@
+<h1>Blog</h1>
+
 <div class="front-square">
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -11,6 +13,7 @@
   </div>
 </div>
 
+<h1>Comment</h1>
 
 {{#each blog.comments}}
 <div class="front-square">
@@ -27,6 +30,9 @@
 
 
 
+
+<form>
+
 <div class="front-square">
   <div class="panel panel-default">
     <div class="panel-heading">
@@ -36,11 +42,16 @@
       <label class="label"> &nbsp Comment : </label>
      <form>
           <div class="input-group">
-               <textarea class="form-control blog-input" rows="4" cols="50" /></textarea>
+               <textarea id="textarea" class="form-control blog-input" rows="4" cols="50" /></textarea>
           </div>
-          <button id="Button" class="input-group">Create</button>
+          <button id="comment-but" class="input-group">Create</button>
      </form>
                      
     </div>
   </div>
 </div>
+  {{!-- Passing blog id --}}
+<input type="hidden" id="blog-id" name="blog-id" value="{{blog.id}}" />
+</form>
+
+<script src="/js/blog.js"></script>

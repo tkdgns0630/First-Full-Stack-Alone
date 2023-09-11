@@ -1,8 +1,14 @@
-<button id="Button" class="input-group dashboard-but">
-  <p class="dashboard-title">&nbsp&nbsp&nbsp&nbsp&nbsptitle</p>
-  <p class="dashboard-date">Date</p>
-</button>
+{{#each user.blogs}}
+  <a href="/api/dashboard/{{id}}">
+    <button id="button-blog" class="button input-group dashboard-but">
+      <p class="dashboard-title">&nbsp&nbsp&nbsp&nbsp&nbspTitle: {{title}} </p>
+      <p class="dashboard-date">Date: {{date}}</p>
+    </button>
+  </a>
+{{/each}}
 
-  <button id="Button" class="dashboard-create">
+<a href="/api/dashboard/createblog">
+  <button id="button-add" class="button dashboard-create">
     Create a blog
   </button>
+</a>

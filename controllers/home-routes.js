@@ -7,7 +7,7 @@ router.get("/", async (req, res) => {
   const allBlog = await Blog.findAll();
   const blogs = allBlog.map((blog) => blog.get({ plain: true }));
   // pass blog list to frotn
-  res.render("front", { blogs });
+  res.render("front", { blogs, logged_in: req.session.logged_in });
 });
 
 module.exports = router;

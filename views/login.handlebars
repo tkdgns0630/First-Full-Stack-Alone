@@ -1,37 +1,38 @@
 <form>
-<div class="login-container">
-  <div class="panel-heading">
-    <h3 class="sign-up-title">Login</h3>
+  <div class="login-container">
+    <div class="panel-heading">
+      <h3 class="sign-up-title">Login</h3>
+    </div>
+    <label class="label"> &nbsp Username</label>
+
+    <div class="input-group">
+      <input
+        id="login-name"
+        type="text"
+        class="form-control"
+        placeholder="Username"
+        aria-describedby="basic-addon2"
+      />
+    </div>
+
+    <label class="label"> &nbsp Password</label>
+    <div class="input-group">
+      <input
+        id="login-password"
+        type="text"
+        class="form-control"
+        aria-label="Amount (to the nearest dollar)"
+      />
+    </div>
+
+    <button id="Button" class="input-group login-button">Login</button>
+
+    <a id="a-login" href="/api/user/login">Sign-up instead</a>
+    <br />
+    <br />
+    <p id="login-fail"></p>
   </div>
-  <label class="label"> &nbsp Username</label>
-
-  <div class="input-group">
-    <input
-    id="login-name"
-      type="text"
-      class="form-control"
-      placeholder="Username"
-      aria-describedby="basic-addon2"
-    />
-  </div>
-
-  <label class="label"> &nbsp Password</label>
-  <div class="input-group">
-    <input
-    id ="login-password"
-      type="text"
-      class="form-control"
-      aria-label="Amount (to the nearest dollar)"
-    />
-  </div>
-
-  <button id="Button" class="input-group login-button">Login</button>
-
-  <a id="a-login" href="/api/user/login">Sign-up instead</a>
-  <br />
-  <br />
-  <p id="login-fail"></p>
-</div>
 </form>
 
-<script src ="../js/login.js" >
+<script src="/js/login.js"></script>
+{{! <script src="../js/login.js"></script> }}

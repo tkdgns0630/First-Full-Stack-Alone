@@ -7,17 +7,28 @@
   <div class="input-group">
     <input
       type="text"
+      id="blog-title"
       class="form-control"
       placeholder="Blog title"
       aria-describedby="basic-addon2"
+      value="{{theBlog1.title}}"
     />
   </div>
 
   <label class="label"> &nbsp Content</label>
   <div class="input-group">
-    <textarea class="form-control blog-input" rows="4" cols="50" /></textarea>
+    <textarea
+      id="textarea"
+      class="form-control blog-input"
+      rows="4"
+      cols="50"
+    >{{theBlog1.body}}</textarea>
   </div>
 
-  <button id="Button" class="input-group">Update Post</button>
-  <button id="Button" class="input-group">Delete</button>
+  <button id="Button" class="input-group create-but">Update Post</button>
+  <button id="Button" class="input-group del-but">Delete</button>
 </div>
+
+<input type="hidden" id="blog-id" name="blog-id" value="{{theBlog1.id}}" />
+
+<script src="/js/updateblog.js"></script>
